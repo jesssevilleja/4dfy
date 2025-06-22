@@ -1,0 +1,6 @@
+schema: ./schema.gql
+documents: ./src/framework/graphql/**/*.graphql
+plugins:
+  - typescript-operations
+  - typescript-react-apollo
+cacheDir: __generated__

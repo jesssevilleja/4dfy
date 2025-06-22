@@ -1,0 +1,33 @@
+{
+  "name": "4dfy",
+  "version": "11.9.0",
+  "license": "MIT",
+  "private": true,
+  "author": "JMVS",
+  "scripts": {
+    "clean": "rimraf \"{.next,node_modules,__generated__,.cache}\"",
+    "clean:graphql": "rimraf \"{__generated__,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\"",
+    "dev:api": "cd api && yarn dev",
+    "build:api": "cd api && yarn build",
+    "start:api": "cd api && yarn start",
+    "deploy:api": "vercel ./api",
+    "deploy:api:prod": "vercel --prod --cwd api",
+    "dev:web": "cd web && yarn dev",
+    "build:web": "cd web && yarn build",
+    "start:web": "cd web && yarn start",
+    "deploy:web": "vercel ./web",
+    "deploy:web:prod": "vercel --prod --cwd web",
+    "dev:admin": "cd admin && yarn dev",
+    "build:admin": "cd admin && yarn build",
+    "start:admin": "cd admin && yarn start",
+    "deploy:admin": "vercel ./admin",
+    "deploy:admin:prod": "vercel --prod --cwd admin"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "prettier": "^2.8.8",
+    "rimraf": "^6.0.1",
+    "vercel": "^39.0.0"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}

@@ -1,0 +1,7 @@
+mutation Upload($attachment: [AttachmentInput!]!) {
+  upload(attachment: $attachment) {
+    original
+    thumbnail
+    id
+  }
+}

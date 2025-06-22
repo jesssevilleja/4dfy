@@ -1,0 +1,11 @@
+{
+  "build": {
+    "env": {
+      "APPLICATION_MODE": "production",
+      "FRAMEWORK_PROVIDER": "graphql",
+      "NEXT_PUBLIC_GRAPHQL_API_ENDPOINT": "https://gql.4dfy.me/graphql"
+    },
+    "regions": ["hkg1"],
+    "installCommand": "yarn install"
+  }
+}
